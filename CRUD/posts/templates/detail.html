@@ -12,5 +12,9 @@
     <p>{{post.created_at}}</p>
     <p>{{post.updated_at}}</p>
     <a href ="{%url 'posts:list' %}">리스트로 돌아가기</a> <br />
+
+    <a href ="{%url 'posts:update' post.id %}">수정하기</a> <br />
+    <a href ="{%url 'posts:delete' post.id %}">삭제하기</a> <br />
+
 </body>
 </html>
